@@ -8,10 +8,14 @@ import java.util.Optional;
 import java.util.Set;
 import java.util.UUID;
 
-@Repository
+
 public class AnimeRepository {
 
-    private final Set<Anime> animes = new HashSet<>();
+    private final Set<Anime> animes;
+
+    public AnimeRepository(Set<Anime> animes) {
+        this.animes = animes;
+    }
 
     public Anime create(Anime anime) {
         String id = UUID.randomUUID().toString();

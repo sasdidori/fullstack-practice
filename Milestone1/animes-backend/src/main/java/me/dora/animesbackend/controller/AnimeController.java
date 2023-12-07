@@ -4,9 +4,9 @@ import me.dora.animesbackend.model.Anime;
 import me.dora.animesbackend.service.AnimeService;
 import org.springframework.web.bind.annotation.*;
 
-import java.util.Optional;
 import java.util.Set;
 
+@CrossOrigin
 @RestController
 @RequestMapping("animes")
 public class AnimeController {
@@ -19,12 +19,12 @@ public class AnimeController {
     }
 
     @PostMapping
-    Anime create(@RequestBody Anime anime){
+    Anime create(@RequestBody Anime anime) {
         return animeService.create(anime);
     }
 
     @GetMapping
-    Set<Anime> readAll(){
+    Set<Anime> readAll() {
         return animeService.readAll();
     }
 
@@ -35,16 +35,17 @@ public class AnimeController {
     }
 
     @PatchMapping
-    Anime update(@RequestBody Anime anime){
+    Anime update(@RequestBody Anime anime) {
         return animeService.update(anime);
     }
 
     @DeleteMapping
-    void deleteAll(){
+    void deleteAll() {
         animeService.deleteAll();
     }
+
     @DeleteMapping("{id}")
-    void deleteOneById(@PathVariable String id){
+    void deleteOneById(@PathVariable String id) {
         animeService.deleteOneById(id);
     }
 }

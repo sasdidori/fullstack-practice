@@ -12,6 +12,7 @@ import java.util.Set;
 
 import static org.junit.jupiter.api.Assertions.*;
 
+//behavioural test
 class AnimeServiceTest {
 
     AnimeRepository animeRepository = Mockito.mock(AnimeRepository.class);

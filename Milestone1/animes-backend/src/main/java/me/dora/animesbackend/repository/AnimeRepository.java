@@ -29,7 +29,9 @@ public class AnimeRepository {
     }
 
     public Optional<Anime> readOneByTitle(String title) {
-        return animes.stream().filter(anime -> anime.title().equals(title)).findFirst();
+        return animes.stream().filter(anime -> anime.title()
+                .equals(title))
+                .findFirst();
     }
 
     public Anime update(Anime anime) {

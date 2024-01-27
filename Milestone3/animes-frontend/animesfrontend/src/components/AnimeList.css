@@ -1,0 +1,76 @@
+.animelist {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    display: flexbox;
+    gap: 2rem;
+    padding: 1.5rem;
+    list-style: none;
+    background-color: whitesmoke;
+    color: black;
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+.tbody {
+    align-items: center;
+}
+
+th, td {
+	
+	padding: 8px;
+    text-align: center;
+
+}
+
+thead {
+	background-color: #333;
+	color: white;
+	font-size: 0.875rem;
+	text-transform: uppercase;
+	letter-spacing: 2%;
+    
+
+}
+
+.title {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+    padding: 0.5rem;
+    list-style: none;
+    background-color: whitesmoke;
+    color: black;
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+
+.deletebutton {
+    margin: 0;
+    padding: 6px;
+    border-radius: 4px;
+    list-style-type: none;
+    border: 2px solid white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background:rgb(219, 97, 97);
+    color: white;
+    font-size: 0.7rem;
+    font-weight: bold;
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+
+.deletebutton:hover {
+    background-color: rgb(118, 45, 45); /* Green */
+    color: white;
+  }
